@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Viewer</title>
+    <script type="module" src="/src/main.ts"></script>
+    <style>
+        #fileSelector {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <select id="fileSelector">
+        <option value="https://huggingface.co/datasets/prakashknaikade/3DGS_Results/resolve/main/taylor_swift.splat?download=true">Taylor Swift</option>
+        <option value="https://huggingface.co/datasets/prakashknaikade/3DGS_Results/resolve/main/man_crop.splat?download=true">Man Crop</option>
+        <option value="https://huggingface.co/datasets/prakashknaikade/3DGS_Results/resolve/main/taylor_swift_sh_0_cropped.splat?download=true">Taylor Swift SH 0 Cropped</option>
+        <option value="https://huggingface.co/datasets/prakashknaikade/3DGS_Results/resolve/main/taylor_swift_gsplat_extended_sh_0_cropped.splat?download=true">Taylor Swift Gsplat Extended SH 0 Cropped</option>
+    </select>
+    <div id="viewer"></div>
+</body>
+</html>
