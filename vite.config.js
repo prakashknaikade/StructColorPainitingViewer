@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/StructColorPaintingViewer/',
+  base: '/StructColorPainitingViewer/',
   build: {
     outDir: 'dist'
   }
