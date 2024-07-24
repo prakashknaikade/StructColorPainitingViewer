@@ -1,13 +1,38 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
+    <title>3D Viewer</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        #fileSelector {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 10;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        #viewer {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <select id="fileSelector">
+        <option value="https://huggingface.co/datasets/prakashknaikade/3DGS_Results/resolve/main/taylor_swift.splat?download=true">Taylor Swift</option>
+        <option value="https://huggingface.co/datasets/prakashknaikade/3DGS_Results/resolve/main/man_crop.splat?download=true">Man Crop</option>
+        <option value="https://huggingface.co/datasets/prakashknaikade/3DGS_Results/resolve/main/taylor_swift_sh_0_cropped.splat?download=true">Taylor Swift SH 0 Cropped</option>
+        <option value="https://huggingface.co/datasets/prakashknaikade/3DGS_Results/resolve/main/taylor_swift_gsplat_extended_sh_0_cropped.splat?download=true">Taylor Swift Gsplat Extended SH 0 Cropped</option>
+    </select>
+    <div id="viewer"></div>
     <script type="module" src="/src/main.ts"></script>
-  </body>
+</body>
 </html>
