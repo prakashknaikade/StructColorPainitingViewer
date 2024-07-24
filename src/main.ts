@@ -33,7 +33,7 @@ const camera = new SPLAT.Camera();
 const renderer = new SPLAT.WebGLRenderer();
 const controls = new SPLAT.OrbitControls(camera, renderer.domElement);
 
-document.body.appendChild(renderer.domElement);
+document.getElementById('viewer')?.appendChild(renderer.domElement);
 
 async function loadFile(url: string) {
     // Create a new scene
@@ -59,5 +59,4 @@ document.getElementById('fileSelector')?.addEventListener('change', (event: Even
 });
 
 // Initial file load
-loadFile('https://huggingface.co/datasets/prakashknaikade/3DGS_Results/resolve/main/taylor_swift_sh_0_cropped.splat?download=true');
-
+loadFile('https://huggingface.co/datasets/prakashknaikade/3DGS_Results/resolve/main/taylor_swift_gsplat_extended_sh_0_cropped.splat?download=true');
